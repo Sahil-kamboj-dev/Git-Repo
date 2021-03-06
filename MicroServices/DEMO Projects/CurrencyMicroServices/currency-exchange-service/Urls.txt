@@ -7,3 +7,11 @@ http://localhost:8100/currency-conversion-feign/from/{from}/to/{to}/quantity/{qu
 
 Eureka Server
 http://localhost:8761/
+
+API-Gateway
+http://localhost:8765/
+http://localhost:8765/currency-exchange/from/USD/to/INR
+http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+--->below path is redirects to "currency-conversion-feign/from/USD/to/INR/quantity/10" using api-gateway routes
+http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10 

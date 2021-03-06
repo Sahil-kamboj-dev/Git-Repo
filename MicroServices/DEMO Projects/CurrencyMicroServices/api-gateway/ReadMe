@@ -2,3 +2,12 @@ Added Api-Gateway...
 
 Provides a simple, yet effective way to route to APIs 
 and provide cross cutting concerns to them such as security, monitoring/metrics, and resiliency.
+
+#
+Added the API-Gateway port number to Urls.txt
+and tried the API-Gateway port to call microservices.
+Here the API-Gateway will ask Eureka Server for path for the services.
+
+#
+Added the ApiGatewayConfiguration.java to enable the API side routing.
+Added Bean gatewayRouter to buld routes to beauty the Urls and map to existing services.
