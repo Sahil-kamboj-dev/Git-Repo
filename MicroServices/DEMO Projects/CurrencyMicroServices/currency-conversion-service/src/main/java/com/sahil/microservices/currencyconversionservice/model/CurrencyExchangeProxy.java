@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
  * url is port number of running MicroService will be removing it later to get it automatically
  * from service registry also called as naming server..
 */
-@FeignClient(name="currency-exchange",url="localhost:8000")
+//@FeignClient(name="currency-exchange",url="localhost:8000")
+@FeignClient(name="currency-exchange")
 public interface CurrencyExchangeProxy {
 
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
