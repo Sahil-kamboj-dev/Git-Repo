@@ -10,4 +10,8 @@ Here the API-Gateway will ask Eureka Server for path for the services.
 
 #
 Added the ApiGatewayConfiguration.java to enable the API side routing.
-Added Bean gatewayRouter to buld routes to beauty the Urls and map to existing services.
+Added Bean gatewayRouter to build routes to beautify the Urls and map to existing services also called as Path Rewriting
+
+#
+Added Logging Filter to add logs in API Gateway server console.
+Logged the path of the request received.
