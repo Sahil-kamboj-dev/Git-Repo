@@ -31,3 +31,8 @@ Open :- when certain no. of services are failing (can be configured) goes into t
 HalfOpen :- after wait is over try some %age of services  ( can be configured )  
 			if getting response  { go back to closed } 
 			else { go back to open state and again waits }
+						
+#
+Tried @RateLimiter used for setting no. of calls per time.
+Added config. related to RateLimiter.
+Tried @Bulkhead used for number of requests at a time.
